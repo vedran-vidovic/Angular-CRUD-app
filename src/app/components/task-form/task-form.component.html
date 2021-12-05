@@ -1,0 +1,24 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">Task</label>
+    <input
+      type="text"
+      id="text"
+      name="text"
+      [(ngModel)]="text"
+      placeholder="Add a task"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">Day & Time</label>
+    <input
+      type="day"
+      id="day"
+      name="day"
+      [(ngModel)]="day"
+      placeholder="Add Day & Time"
+    />
+  </div>
+  <input type="submit" value="Save Task" class="btn btn-block" />
+  <button class="btn btn-block" routerLink="/">Return to list</button>
+</form>

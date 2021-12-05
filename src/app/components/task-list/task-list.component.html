@@ -1,0 +1,18 @@
+<div class="task" *ngFor="let task of tasks">
+  <h3>
+    {{ task.text }}
+    <fa-icon
+      [ngStyle]="{ color: 'red' }"
+      [icon]="faTimes"
+      (click)="onDelete(task)"
+    ></fa-icon>
+    <fa-icon
+      [ngStyle]="{ color: 'blue' }"
+      [icon]="faEdit"
+      (click)="onEdit(task)"
+      (click)="toggle()"
+    ></fa-icon>
+  </h3>
+  <p>{{ task.day }}</p>
+</div>
+<app-task-edit *ngIf="isOn" [editTask]="editTask"></app-task-edit>

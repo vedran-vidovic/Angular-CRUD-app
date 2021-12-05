@@ -1,0 +1,14 @@
+.task {
+  background: #f4f4f4;
+  margin: 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+}

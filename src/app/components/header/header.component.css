@@ -1,0 +1,10 @@
+h1 {
+  font-size: xx-large;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,23 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">{{ editTask.text }}</label>
+    <input
+      type="text"
+      id="text"
+      name="text"
+      [(ngModel)]="text"
+      placeholder="Edit the Task"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">{{ editTask.day }}</label>
+    <input
+      type="day"
+      id="day"
+      name="day"
+      [(ngModel)]="day"
+      placeholder="Edit the Day & Time"
+    />
+  </div>
+  <input type="submit" value="Edit Task" class="btn btn-block" />
+</form>
